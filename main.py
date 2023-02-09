@@ -15,8 +15,8 @@ import position_control as control
 logging.basicConfig(filename="pybit.log", level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(message)s")
 
-apiKey="lwcANHnjmTREsDZyG1"
-secretKey="1iCuzTB7ysJwxqwAMSm8QCVxkcwfQXCE5MRM"
+apiKey="j83Gn95OgZoylzQTd2"
+secretKey="zye1DBwtq1nDRrGwGxEV51U41N833v36KJB0"
 
 
 # авторизация bybit
