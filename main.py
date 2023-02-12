@@ -146,7 +146,7 @@ def handle_function(message):
 
 
 
-ws_perpetual.kline_stream(handle_function, symbols, "1")
+ws_perpetual.kline_stream(handle_function, symbols, "5")
 
 while True:
 	sleep(1)
