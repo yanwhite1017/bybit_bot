@@ -105,7 +105,7 @@ def handle_function(message):
 											symbol=poll_symbol_pair,
 											qty=qValue)
 
-				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.35
+				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.25
 				short_Longfloat = toFixed(Longfloat, 2)
 				short_Longfloat = float(short_Longfloat)
 
@@ -131,7 +131,7 @@ def handle_function(message):
 											secret=secretKey,
 											symbol=poll_symbol_pair,
 											qty=qValue)
-				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.35
+				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.25
 				short_Shortfloat = toFixed(Shortfloat, 2)
 				short_Shortfloat = float(short_Shortfloat)
 
@@ -146,7 +146,7 @@ def handle_function(message):
 
 
 
-ws_perpetual.kline_stream(handle_function, symbols, "5")
+ws_perpetual.kline_stream(handle_function, symbols, "15")
 
 while True:
 	sleep(1)
