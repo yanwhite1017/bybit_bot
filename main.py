@@ -105,11 +105,11 @@ def handle_function(message):
 				#							symbol=poll_symbol_pair,
 				#							qty=qValue)
 
-				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.15
+				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.45
 				short_Longfloat = toFixed(Longfloat, 2)
 				short_Longfloat = float(short_Longfloat)
 
-				tp = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.40
+				tp = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.45
 				short_tp = toFixed(tp, 2)
 				short_tp = float(short_tp)
 
@@ -136,11 +136,11 @@ def handle_function(message):
 				#							secret=secretKey,
 				#							symbol=poll_symbol_pair,
 				#							qty=qValue)
-				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.15
+				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.45
 				short_Shortfloat = toFixed(Shortfloat, 2)
 				short_Shortfloat = float(short_Shortfloat)
 
-				tp = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.40
+				tp = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.45
 				short_tp = toFixed(tp, 2)
 				short_tp = float(short_tp)
 
