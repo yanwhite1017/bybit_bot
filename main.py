@@ -38,9 +38,9 @@ telegram_bot = telebot.TeleBot('5250317638:AAEW3a0SALVDEeF_0UWuD9t89GUaEmTVwho')
 leverage = 20
 symbols = ["ETHUSDT", "MATICUSDT", "SHIB1000USDT", "ATOMUSDT"]
 
-set_of_klines = {'ETHUSDT': [None, None], "BTCUSDT": [None, None], "MATICUSDT": [None, None], "SHIB1000USDT": [None, None]}
+set_of_klines = {'ETHUSDT': [None, None], "BTCUSDT": [None, None], "MATICUSDT": [None, None], "SHIB1000USDT": [None, None], "ATOMUSDT": [None, None]}
 
-position_now = {'ETHUSDT': {'type': None}, 'BTCUSDT': {'type': None}, 'MATICUSDT': {'type': None}, 'SHIB1000USDT': {'type': None}}
+position_now = {'ETHUSDT': {'type': None}, 'BTCUSDT': {'type': None}, 'MATICUSDT': {'type': None}, 'SHIB1000USDT': {'type': None}, 'ATOMUSDT': {'type': None}}
 
 def toFixed(numObj, digits=0):
 	return f"{numObj:.{digits}f}"
