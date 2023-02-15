@@ -5,7 +5,6 @@ url="https://api-testnet.bybit.com"
 
 apiKey="j83Gn95OgZoylzQTd2"
 secretKey="zye1DBwtq1nDRrGwGxEV51U41N833v36KJB0"
-symbol = "ETHUSDT"
 
 def close_all_positions(url, api, secret, symbol, qty):
 	ret = {'short': False, 'long': False, 'no_position': True}
