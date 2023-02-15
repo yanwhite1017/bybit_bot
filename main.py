@@ -99,11 +99,11 @@ def handle_function(message):
 				elif poll_symbol_pair == 'SHIB1000USDT':
 					qValue = 35000
 				
-				control.close_all_positions(url="https://api-testnet.bybit.com",
-											api=apiKey,
-											secret=secretKey,
-											symbol=poll_symbol_pair,
-											qty=qValue)
+				#control.close_all_positions(url="https://api-testnet.bybit.com",
+				#							api=apiKey,
+				#							secret=secretKey,
+				#							symbol=poll_symbol_pair,
+				#							qty=qValue)
 
 				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.20
 				short_Longfloat = toFixed(Longfloat, 2)
@@ -131,11 +131,11 @@ def handle_function(message):
 					qValue = 35000
 
 				position_now[poll_symbol_pair]['type'] = 'SHORT'
-				control.close_all_positions(url="https://api-testnet.bybit.com",
-											api=apiKey,
-											secret=secretKey,
-											symbol=poll_symbol_pair,
-											qty=qValue)
+				#control.close_all_positions(url="https://api-testnet.bybit.com",
+				#							api=apiKey,
+				#							secret=secretKey,
+				#							symbol=poll_symbol_pair,
+				#							qty=qValue)
 				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.20
 				short_Shortfloat = toFixed(Shortfloat, 2)
 				short_Shortfloat = float(short_Shortfloat)
