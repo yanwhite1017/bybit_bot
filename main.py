@@ -105,7 +105,7 @@ def handle_function(message):
 				#							symbol=poll_symbol_pair,
 				#							qty=qValue)
 
-				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.10
+				Longfloat = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.15
 				short_Longfloat = toFixed(Longfloat, 2)
 				short_Longfloat = float(short_Longfloat)
 
@@ -136,7 +136,7 @@ def handle_function(message):
 				#							secret=secretKey,
 				#							symbol=poll_symbol_pair,
 				#							qty=qValue)
-				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.10
+				Shortfloat = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.15
 				short_Shortfloat = toFixed(Shortfloat, 2)
 				short_Shortfloat = float(short_Shortfloat)
 
