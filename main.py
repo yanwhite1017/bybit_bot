@@ -35,8 +35,8 @@ telegram_bot = telebot.TeleBot('5250317638:AAEW3a0SALVDEeF_0UWuD9t89GUaEmTVwho')
 
 
 #конфигурация плеч
-leverage = 10
-symbols = ["ETHUSDT", "MATICUSDT", "SHIB1000USDT"]
+leverage = 20
+symbols = ["ETHUSDT", "MATICUSDT", "SHIB1000USDT", "ATOMUSDT"]
 
 set_of_klines = {'ETHUSDT': [None, None], "BTCUSDT": [None, None], "MATICUSDT": [None, None], "SHIB1000USDT": [None, None]}
 
