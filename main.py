@@ -109,7 +109,7 @@ def handle_function(message):
 				short_Longfloat = toFixed(Longfloat, 2)
 				short_Longfloat = float(short_Longfloat)
 
-				tp = float(data_candle[0]["close"])-float(data_candle[0]["close"])/100*0.4
+				tp = float(data_candle[0]["close"])+float(data_candle[0]["close"])/100*0.4
 				short_tp = toFixed(tp, 2)
 				short_tp = float(short_tp)
 
