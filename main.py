@@ -36,7 +36,7 @@ telegram_bot = telebot.TeleBot('5250317638:AAEW3a0SALVDEeF_0UWuD9t89GUaEmTVwho')
 
 #конфигурация плеч
 leverage = 10
-symbols = ["ETHUSDT"]
+symbols = ["ETHUSDT", "MATICUSDT", "SHIB1000USDT"]
 
 set_of_klines = {'ETHUSDT': [None, None], "BTCUSDT": [None, None], "MATICUSDT": [None, None], "SHIB1000USDT": [None, None]}
 
@@ -156,7 +156,7 @@ def handle_function(message):
 
 
 
-ws_perpetual.kline_stream(handle_function, symbols, "1")
+ws_perpetual.kline_stream(handle_function, symbols, "5")
 
 while True:
 	sleep(1)
